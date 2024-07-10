@@ -1,0 +1,32 @@
+#groceries{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#groceries div{
+    width: 200px;
+    height: 200px;
+    background-color:aliceblue;
+    padding: 30px;
+    flex-direction: row;
+    flex-wrap: wrap
+}
+
+#groceries div img{
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+}
+
+h1 {
+    margin: auto;
+}
+
+p {
+    background-color: blanchedalmond;
+    font-family: fantasy;
+    background-size: 50px;
+
+}
