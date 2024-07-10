@@ -11,22 +11,27 @@
     background-color:aliceblue;
     padding: 30px;
     flex-direction: row;
-    flex-wrap: wrap
+    flex-wrap: wrap;
 }
 
 #groceries div img{
     width: 80%;
     height: 80%;
     object-fit: cover;
+}x
+
+#links {
+    flex-direction: column;    
+    gap: 50px;
+    background-color: blue;
 }
 
 h1 {
     margin: auto;
 }
 
-p {
+.price {
     background-color: blanchedalmond;
     font-family: fantasy;
     background-size: 50px;
-
 }
