@@ -1,9 +1,16 @@
-#groceries{
+#groceries {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+}
+
+/* #groceries{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
-}
+} */
 
 #groceries div{
     width: 200px;
@@ -18,12 +25,18 @@
     width: 80%;
     height: 80%;
     object-fit: cover;
-}x
+    transition: 4s;
+
+}
+
+#groceries div img:hover {
+    width: 500px;
+    height: 500px;
+}
 
 #links {
     flex-direction: column;    
-    gap: 50px;
-    background-color: blue;
+    /* background-color: blue; */
 }
 
 h1 {
@@ -32,6 +45,33 @@ h1 {
 
 .price {
     background-color: blanchedalmond;
-    font-family: fantasy;
+    font-family: Arial;
     background-size: 50px;
+    width: 150px;
+    /* How long it should it take to reach the final state */
+    transition: width 1s;
+
+    /* CSS Animations */
+    animation-name: multiplecolors;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
+
+/* name of animations */
+@keyframes colorswitch {
+    from {background-color: aqua;}
+    to {background-color: green;}
+}
+
+@keyframes multiplecolors {
+    0% {background-color: cornflowerblue;}
+    25% {background-color: rgb(102, 203, 203);}
+    50% {background-color: goldenrod;}
+    100% {background-color: cornflowerblue;}
+}
+
+.price:hover{
+    background-color: aquamarine;
+    width: 200px;
+}
+
